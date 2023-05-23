@@ -1,0 +1,24 @@
+name: env
+channels:
+- conda-forge
+- defaults
+dependencies:
+- numpy
+- scipy
+- xarray
+- dask
+- jupyter
+- jupyterlab
+- matplotlib
+- cmocean
+- statsmodels
+- ipython
+- pip    
+- xmitgcm
+- cmaps
+- setuptools
+- pip:
+  - gsw                                                   # gibbs sea-water TEOS10 function
+  - geopy                                                 # useful lat lon to distance approximations
+  - git+https://github.com/nsidc/polarstereo-lonlat-convert-py.git # for sea ice field projections (annoying...)
+  - jupyterlab_latex
